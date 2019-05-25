@@ -86,7 +86,7 @@ class _ConfigurarUrlState extends State<ConfigurarUrl>{
                         ),
                       ),
                       elevation: 4.0,
-                      splashColor: Colors.deepPurpleAccent,
+                      splashColor: Colors.redAccent,
                       onPressed: () {
                         // Perform some action
                         SaveURL();

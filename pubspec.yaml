@@ -27,6 +27,15 @@ dev_dependencies:
   flutter_map:            #Permite usar mapas como leaflet
   shared_preferences: ^0.4.3     #Permite almacenar datos clave-valor en disco
 
+  flutter_launcher_icons:
+  #flutter pub get
+  #flutter pub pub run flutter_launcher_icons:main
+
+flutter_icons:
+  image_path: "images/unifoss.png"
+  android: true
+  ios: true
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
@@ -42,7 +51,13 @@ flutter:
         - images/loading.gif
         - images/loading2.gif
         - images/loading3.gif
+        - images/loading4.gif
         - images/connect.jpg
+        - images/unifoss2.png
+  fonts:
+    - family: Sacramento
+      fonts:
+        - asset: fonts/LobsterTwo.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

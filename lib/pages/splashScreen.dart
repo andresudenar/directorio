@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 4), () => Navigator.pop(context, "/"));
+    Timer(Duration(seconds: 3), () => Navigator.pop(context, "/"));
   }
 
   @override
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Colors.white),
+            decoration: BoxDecoration(color: Colors.redAccent),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      CircleAvatar(
+                      /*CircleAvatar(
                         backgroundColor: Colors.black87,
                         radius: 50.0,
                         child: Icon(
@@ -41,18 +41,19 @@ class _SplashScreenState extends State<SplashScreen> {
                           color: Colors.white,
                           size: 50.0,
                         ),
-                      ),
+                      ),*/
                       Padding(
                         padding: EdgeInsets.only(top: 10.0),
                       ),
                       Center(
                         child:
                       Text(
-                        '¡Bienvenid@!\nUNI-FOSS',
+                        'Uni-Foss',
                         style: TextStyle(
-                            color: Colors.black87,
+                          fontFamily: "Sacramento",
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 24.0),
+                            fontSize: 45.0),
                         textAlign: TextAlign.center,
 
                       ))
@@ -60,6 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
               ),
+              /*
               Expanded(
                 flex: 1,
                 child: Column(
@@ -80,7 +82,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     )
                   ],
                 ),
-              )
+              )*/
             ],
           )
         ],

@@ -18,7 +18,7 @@ class Menu extends StatefulWidget{
   @override
   _MenuState createState() => new _MenuState(titulo,services);
   final String titulo;
-  final String services;
+  final services;
   Menu(this.titulo,this.services);
 }
 
@@ -43,17 +43,17 @@ class _MenuState extends State<Menu>{
                 itemCount: services == null ? 0 : services.length,
                 itemBuilder: (context, i) {
                   return new FlatButton(
-                    child: new MenuLista(services[i]['title'].toString(),
+                    /*child: new MenuLista(services[i]['title'].toString(),
                         services[i]['description'].toString(),
                         'http://johnmariogb.pythonanywhere.com'+services[i]['icon'].toString()
-                    ),
+                    ),*/
                     padding: const EdgeInsets.all(0.0),
                     onPressed: () {
                       Navigator.push(
                           context, new MaterialPageRoute(builder: (context) {
-                            if(services[i]['kind'].toString()=='map'){
+                            /*if(services[i]['kind'].toString()=='map'){
                               return Maps();
-                            }
+                            }*/
 
                       }));
                     },
